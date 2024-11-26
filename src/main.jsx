@@ -10,7 +10,8 @@ const router = createBrowserRouter([
  },
  {
   path:'/users',
-  element:<Users/>
+  element:<Users/>,
+  loader:() => fetch(`http://localhost:4000/users`)
  }
 
 ])
